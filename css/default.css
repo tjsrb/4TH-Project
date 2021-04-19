@@ -6,12 +6,27 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'IBMPlexSansKR-SemiBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SDSamliphopangche_Outline';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --header-height: 68px;
   --pc-container: 1320px;
   --main-orange: rgb(255, 102, 0);
   --light-gray: #f0f0f0;
-  --dark-gray: rgb(134, 89, 89);
+  --dark-gray: rgb(216, 216, 216);
 }
 /* 1320 */
 
@@ -171,12 +186,14 @@ button {
 
 .comm-footer {
   position: absolute;
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   bottom: 0;
   width: 100%;
+  background-color: white;
 }
 
 .footer-container {
@@ -255,7 +272,9 @@ button {
   color: var(--main-orange);
   margin-bottom: 10px;
 }
+
 .comm-header {
+  z-index: 10;
   position: fixed;
   left: 0;
   top: 0;
@@ -275,6 +294,11 @@ button {
   background-color: var(--light-gray);
 }
 
+/* 추가 */
+.header-row:nth-child(2) {
+  background-color: white;
+}
+
 .header-contents {
   width: var(--pc-container);
   height: 100%;
@@ -290,5 +314,11 @@ button {
 .header-nav-menu > li {
   cursor: pointer;
   margin: 0 13px;
-  /* background-color: red; */
+}
+/* 지원추가 */
+@media (max-width: 1320px) {
+  .footer-container {
+    font-size: 14px;
+    width: 100vw;
+  }
 }
