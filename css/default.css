@@ -208,7 +208,7 @@ button {
 
 /*카테고리 햄*/
 #cNav {
-  display: block;
+  display: none;
   position: absolute;
   top: 10px;
   left: 14px;
@@ -434,23 +434,36 @@ button {
 }
 @media (max-width: 1260px) {
 }
+/*모바일*/
 @media (max-width: 375px) {
   .ham {
-    position: relative;
-    display: inline;
+    display: block;
+    float: left;
   }
   .header-contents {
-    position: relative;
   }
-  .header-contents .topmenu {
+  .header-contents ul {
+  }
+  .header-contents ul.header-top-menu {
     display: none;
   }
-  .header-contents li {
+  .header-contents ul.header-bottom-light {
+    display: none;
   }
-  .header-contents li .logo {
-    padding: 15px 8px 5px 0;
-    display: inline;
+  .header-contents ul.header-bottom-left {
+    display: none;
   }
+  .header-contents ul li {
+  }
+  .header-contents li a {
+    float: left;
+  }
+  .header-contents li a img {
+    position: absolute;
+    right: 24px;
+    top: 13px;
+  }
+  /*--헤더 반응형 끝*/
   .box {
     width: 100%;
   }
