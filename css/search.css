@@ -1,0 +1,118 @@
+/* IR 효과 */
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+.contents-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.contents-area2 {
+  width: 800px;
+}
+
+.search {
+  margin-left: 150px;
+}
+.search-bar {
+  width: 465px;
+  height: 48px;
+  border: solid 2px var(--main-orange);
+  background: white;
+  font-size: 15px;
+  padding-left: 5px;
+}
+.b-search {
+  /*돋보기 디자인 나중엥*/
+  width: 52px;
+  height: 52px;
+  border: solid 2px var(--main-orange);
+  background: var(--main-orange);
+  vertical-align: 9px;
+}
+
+.tag {
+  position: relative;
+}
+.tag ul {
+  margin-top: 20px;
+  margin-left: 60px;
+}
+.tag li {
+  display: inline;
+  margin: 5px;
+  padding: 5px 5px;
+}
+.tag li.hit-keyword {
+  border: 1px solid var(--main-orange);
+  border-radius: 15px;
+  background: var(--main-orange);
+  color: #fff;
+}
+.tag li a {
+  padding: 5px 5px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+.tag li a:hover {
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s;
+}
+
+.count-sort {
+  margin-top: 50px;
+}
+.count-sort p {
+  float: left;
+  position: relative;
+  display: inline;
+}
+.count-sort p .total {
+  font-weight: 700;
+}
+.count-sort .ui_select {
+  float: right;
+  width: 90px;
+  box-sizing: border-box;
+  background: #fff;
+  color: rgb(150, 150, 150);
+  height: 30px;
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 15px;
+  padding: 0 10px;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  vertical-align: middle;
+  text-align: left;
+  white-space: nowrap;
+  background: #fff url(../images/down.svg) no-repeat right 10px center;
+  background-size: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

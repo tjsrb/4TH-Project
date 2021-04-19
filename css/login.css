@@ -1,0 +1,89 @@
+/* IR 효과 */
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+.contents-area {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.login {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.b-login .identify {
+  width: 465px;
+  height: 48px;
+  border: solid 1px var(--main-orange);
+  background: white;
+  font-size: 15px;
+  padding-left: 5px;
+}
+/*.b-login .identify:active {
+  border: solid 1px var(--dark-gray);
+}*/ /*엑티브 효과 주고 싶은데 텍스트 디폴트..*/
+.b-login .password {
+  width: 465px;
+  height: 48px;
+  border: solid 1px var(--main-orange);
+  background: white;
+  margin-top: 10px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+
+.o-login {
+  margin-bottom: 40px;
+  position: relative;
+}
+.o-login .login-left {
+  display: inline;
+  position: relative;
+}
+.o-login .login-right {
+  float: right;
+}
+.o-login .login-right li {
+  position: relative;
+  display: inline-block;
+}
+
+.s-login {
+}
+.s-login .s-notice {
+  text-align: center;
+  font-weight: 300;
+  color: rgb(185, 185, 185);
+}
+.s-login .social-logo li {
+}
+
+.s-login .social-logo li a {
+}
