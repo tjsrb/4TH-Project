@@ -88,6 +88,9 @@
   font-size: 0.8rem;
   margin-top: 550px;
 }
+.comm-footer{
+  border: 1px solid black;
+}
 @media screen and (max-width: 768px) {
   
 }
