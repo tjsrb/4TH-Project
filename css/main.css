@@ -1,0 +1,93 @@
+.contents-area {
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event-solid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+/* .center {
+  display: flex;
+  justify-content: center;
+} */
+.hashtag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 60px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+
+  background-color: white;
+  color: black;
+}
+.tag1 {
+  border-left: 1px solid gray;
+}
+.hashtag:hover {
+  background-color: black;
+  color: white;
+}
+.Near-box {
+  width: 1300px;
+}
+.Near-box-top {
+  display: flex;
+  justify-content: center;
+}
+.Near-box-contents {
+  margin: 10px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+}
+.Near-box-Sort {
+  margin: 10px;
+}
+.img-margin {
+  margin-right: 15px;
+}
+.btnmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 50px;
+}
+.fixed {
+  position: fixed;
+  margin-right: 50px;
+  width: 90px;
+  background-color: white;
+  right: 0;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid gray;
+  font-size: 0.8rem;
+  margin-top: 400px;
+}
+.top-btn {
+  position: fixed;
+  background-color: white;
+  margin-right: 50px;
+  width: 90px;
+  right: 0;
+  z-index: 1;
+  padding: 10px;
+  border: 1px solid gray;
+  font-size: 0.8rem;
+  margin-top: 550px;
+}
+@media screen and (max-width: 768px) {
+  
+}
