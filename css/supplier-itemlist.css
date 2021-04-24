@@ -1,0 +1,211 @@
+.contents-area-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supplier-main-con {
+  margin: 70px 0 140px 0;
+  flex-direction: column;
+  width: var(--pc-container);
+}
+.page-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  /* background-color: rebeccapurple; */
+}
+
+.page-bottom {
+  color: rgb(73, 73, 73);
+  display: flex;
+  /* background-color: wheat; */
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-bottom .add-item-btn {
+  width: 300px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-family: "IBMPlexSansKR-Regular";
+  background-color: var(--main-orange);
+  transition: 0.3s;
+}
+
+.page-bottom .add-item-btn:hover {
+  background-color: #ddd;
+  color: rgb(68, 68, 68);
+}
+.page-bottom .delete-item-btn {
+  color: rgb(65, 65, 65);
+  font-size: 16px;
+}
+.page-bottom .add-item-btn {
+  width: 300px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  font-family: "IBMPlexSansKR-Regular";
+  background-color: var(--main-orange);
+  transition: 0.3s;
+}
+
+.itemlist-table-th th:nth-child(1) {
+  width: 2%;
+}
+
+.itemlist-table-th th:nth-child(2) {
+  width: 10%;
+}
+
+.itemlist-table-th th:nth-child(3) {
+  width: 25%;
+}
+
+.itemlist-table-th th:nth-child(4) {
+  width: 23%;
+}
+
+.itemlist-table-th th:nth-child(5) {
+  width: 10%;
+}
+.itemlist-table-th th:nth-child(6) {
+  width: 10%;
+}
+
+.itemlist-table-th th:nth-child(7) {
+  width: 10%;
+}
+
+.itemlist-table-th th:nth-child(8) {
+  width: 10%;
+}
+
+.item-img-inTable {
+  width: 80px;
+  height: 80px;
+}
+
+.customStyle-table .table-btn-group {
+  /* background-color: gray; */
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.customStyle-table button {
+  margin: 2px 0;
+  height: 30px;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "IBMPlexSansKR-SemiBold";
+  background-color: var(--main-orange);
+  transition: 0.3s;
+}
+
+.customStyle-table button:hover {
+  background-color: #ddd;
+  color: rgb(68, 68, 68);
+}
+
+@media (max-width: 1320px) {
+  .supplier-main-con {
+    width: 90vw;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1111px) {
+  td:nth-child(6) {
+    display: none;
+  }
+  th:nth-child(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 880px) {
+  .supplier-main-con {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  td:nth-child(1) {
+    display: none;
+  }
+  th:nth-child(1) {
+    display: none;
+  }
+  .delete-item-btn {
+      display: none;
+  }
+  .page-bottom {
+    justify-content: center;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0px;
+    left: 6px;
+    width: 15%;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-family: "IBMPlexSansKR-SemiBold";
+    font-size: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  td:nth-of-type(2):before {
+    content: "이미지";
+  }
+  td:nth-of-type(3):before {
+    content: "상품명";
+  }
+  td:nth-of-type(4):before {
+    content: "태그";
+  }
+  td:nth-of-type(5):before {
+    content: "가격";
+  }
+  td:nth-of-type(6):before {
+    content: "배송비";
+  }
+  td:nth-of-type(7):before {
+    content: "등록일";
+    
+  }
+}
+
+@media (max-width: 750px) {
+}
