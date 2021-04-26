@@ -58,6 +58,18 @@
   font-size: 15px;
   padding-left: 5px;
 }
+.b-b-login {
+  width: 475px;
+  height: 48px;
+  border: solid 1px var(--main-orange);
+  border-radius: 10px;
+  background: var(--main-orange);
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 7px;
+}
 
 .o-login {
   margin-bottom: 40px;
@@ -82,8 +94,36 @@
   font-weight: 300;
   color: rgb(185, 185, 185);
 }
-.s-login .social-logo li {
-}
 
-.s-login .social-logo li a {
+.s-login .social ul {
+  padding: 0 170px;
+}
+.s-login .social ul li {
+  display: inline-block;
+  vertical-align: center;
+  margin-left: 6px;
+  margin-top: 7px;
+  width: 36px;
+  height: 36px;
+  background: url("/images/btn_sns.png") no-repeat;
+  background-size: 216px 108px;
+  cursor: pointer;
+}
+.s-login .social ul li.login-naver {
+  background-position: 0 -36px;
+}
+.s-login .social ul li.login-naver:active {
+  background-position: 0 -72px;
+}
+.s-login .social ul li.login-facebook {
+  background-position: -72px -36px;
+}
+.s-login .social ul li.login-facebook:active {
+  background-position: -72px -72px;
+}
+.s-login .social ul li.login-google {
+  background-position: -144px -36px;
+}
+.s-login .social ul li.login-google:active {
+  background-position: -144px -72px;
 }
