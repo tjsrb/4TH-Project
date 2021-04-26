@@ -1,0 +1,58 @@
+.comm-header {
+  z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.header-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: var(--header-height);
+}
+.header-row:nth-child(1) {
+  background-color: var(--light-gray);
+}
+
+/* 추가 */
+.header-row:nth-child(2) {
+  background-color: white;
+}
+
+.header-contents {
+  width: var(--pc-container);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-menu {
+  display: flex;
+}
+
+.header-nav-menu > li {
+  cursor: pointer;
+  margin: 0 13px;
+}
+
+@media (max-width: 375px) {
+  .header-contents {
+    position: relative;
+  }
+  .header-contents .topmenu {
+    display: none;
+  }
+  .header-contents li {
+  }
+  .header-contents li .logo {
+    padding: 15px 8px 5px 0;
+    display: inline;
+  }
+  
+}

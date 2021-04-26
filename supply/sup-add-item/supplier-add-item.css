@@ -1,0 +1,16 @@
+.contents-area-padding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .supplier-main-con {
+      padding: 0 10px;
+    margin: 70px 0 140px 0;
+    flex-direction: column;
+    width: var(--pc-container);
+  }
+
+  .add-item-page-title {
+
+  }

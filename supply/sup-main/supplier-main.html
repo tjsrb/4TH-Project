@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+</head>
+
+<body>
+    <header>
+      
+    </header>
+    <!-- main내용은 contents-area로 class통일 -->
+    <section class="contents-area contents-area-padding">
+        <div class="supplier-main-con">
+            <article class="spl-btn-con">
+                <div class="spl-btn spl-btn-itemCount">
+                   
+                    <div class="spl-btn-paper">
+                        <div class="spl-btn-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="spl-btn-contents">
+                            <div class="spl-btn-title">
+                                등록된 상품수량
+                            </div>
+                            <div class="spl-btn-contents-count">
+                                50
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spl-btn spl-btn-itemCount">
+                   
+                    <div class="spl-btn-paper">
+                        <div class="spl-btn-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="spl-btn-contents">
+                            <div class="spl-btn-title">
+                                미확인 주문
+                            </div>
+                            <div class="spl-btn-contents-count">
+                                5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="spl-btn spl-btn-itemCount">
+                   
+                    <div class="spl-btn-paper">
+                        <div class="spl-btn-icon">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div class="spl-btn-contents">
+                            <div class="spl-btn-title spl-btn-title-only">
+                                + 상품 등록
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </article>
+            <article class="spl-statistics">
+                <div class="statistics-chart chart-1">
+                    <div class="chart-title">
+                        매장 주문 통계
+                    </div>
+                    <div id="linechart_material"></div>
+                </div>
+                <div class="statistics-chart chart-2">
+                    <!-- <div id="donutchart" style="width: 900px; height: 500px;"></div> -->
+                    <div class="chart-title">
+                        내 상품 인기태그
+                    </div>
+                    <div id="donutchart" style="width: 100%; height: 100%;"></div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- footer css는 default.css에 있음 -->
+    <footer>
+    </footer>
+    <script type="text/javascript" src="./chartAPI.js"></script>
+    <script src="../../common/include-js.js"></script>
+    <script src="./supplier-main-chart.js"></script>
+    <script src="./supplier-main-donutchart.js"></script>
+    <link rel="stylesheet" href="./supplier-main.css">
+
+</body>
+
+</html>
