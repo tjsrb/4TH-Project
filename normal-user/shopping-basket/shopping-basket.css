@@ -1,5 +1,47 @@
-.customStyle-table {
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+td{
+    padding: 15px;
+}
+.shopping-bag{
+    font-size: 3rem;
     width: 100%;
+    height: 200px;
+}
+.product-Explanation{
+    text-align: center;
+    width: 400px;
+    font-size: 0.9rem;
+    color: gray;
+}
+.total-price {
+    width: 50%;
+    font-size: 2rem;
+}
+.price{
+    width: 50%;
+}
+.tb-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.tb-footer-contents{
+    margin: 15px;
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+/* .product{
+    width: 3020px;
+} */
+.customStyle-table {
+
+    width: 80%;
     background-color: white;
     text-align: center;
 }
