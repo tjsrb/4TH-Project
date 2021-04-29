@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 </head>
+
 <body>
     <header>
     </header>
@@ -10,12 +12,40 @@
             <div class="add-item-page-title">
                 상품등록
             </div>
+            <div class="add-item-contents">
+                <div class="add-item-info upload-img">
+                    <div id="itemImagesCon" class="item-images-con">
+                        <div class="img-upload-area" id="dragAndDrop">
+                            <p>
+                                드래그앤 드랍 하여 이미지 업로드
+                            </p>
+                            <div class="upload-btn-con">
+                                <label for="directlyUploadBtn">
+                                    직접업로드하기
+                                </label>
+                                <input type="file" id="directlyUploadBtn" multiple>
+                            </div>
+                        </div>
+                        <!-- 이미지업로드 후 UI -->
+                        <div class="main-img">
+                        </div>
+                        <div class="sub-img">
+                        </div>
+                    </div>
+                </div>
+                <div id="inputInfoArea" class="add-item-info upload-info">
+                    <br>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
     </footer>
-    <script src="./include-js.js"></script>
-    <link rel="stylesheet" href="./css/supplier-add-item.css">
+    <link rel="stylesheet" href="./supplier-add-item.css">
+    <script src="../../common/include-js.js"></script>
+    <script src="./CustomInput.js"></script>
+    <script src="./supplier-add-item.js"></script>
 
 </body>
+
 </html>
