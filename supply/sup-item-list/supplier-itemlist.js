@@ -14,8 +14,6 @@
     }
 
     if (elem.nodeName === "INPUT") {
-      // alert("체크박스")
-      console.log(elem);
       if (elem.classList.contains("item-all-check")) {
         let checkBoxArr = document.getElementsByClassName("item-check");
         for (let i = 0; i < checkBoxArr.length; i++) {
