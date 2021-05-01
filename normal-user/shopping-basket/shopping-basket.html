@@ -1,113 +1,145 @@
 <!DOCTYPE html>
 <html>
+  <head> </head>
 
-<head>
-</head>
-
-<body>
-    <header>
-
-    </header>
+  <body>
+    <header></header>
     <!-- main내용은 contents-area로 class통일 -->
 
     <section class="contents-area">
-        <article class="">
-            <div class="shopping-bag center">
-                <span><strong>장바구니</strong></span>
+      <article class="">
+        <div class="shopping-bag center">
+          <span><strong>장바구니</strong></span>
+        </div>
+
+        <!--  모바일 화면 영역-->
+        <div class="body-domain center">
+          <div class="center media-btn-box">
+            <div class="meida-btn-box-contents">
+              <input type="checkbox" class="ckALL" />전체선택
+              <div class="btn-shopping-contents">
+                <button type="button" class="btn-shopping-DELTE">
+                  장바구니 지우기
+                </button>
+                <button type="button">선택 삭제</button>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="meida-btn-box-contents">
+          <input type="checkbox" class="ckALL" />
+        </div>
+        <div class="prdbox">
+          <div class="tumbnail">
+            <img src="../../images/img.png" class="img" />
+          </div>
+          <div class="discription">
+            플로럴 원피스 ㅁㄴㅇㅁㄴㅇㅁㄴㅇ
+            <div class="Detail-text">옵션: 그린</div>
+            <div class="Detail-price">139,000</div>
+            <ul class="info">
+              <li class="ec-base-qty">
+                <button class="btn-minus"><i class="fas fa-minus"></i></button>
+                1
+                <button class="btn-plus"><i class="fas fa-plus"></i></button>
+              </li>
+            </ul>
+            <div class="delivery-price">asd</div>
+          </div>
+        </div>
+        <!-- -------------------------------            -->
 
-
-
-            <!----------------------------------------  테이블 영역 ------------------------------------------>
-            <div class="center">
-                <table class="customStyle-table">
-                    <thead class="thead">
-                        <tr>
-                            <th>이미지</th>
-                            <th class="product">상품정보</th>
-                            <th>판매가</th>
-                            <th>수량</th>
-                            <th>배송비</th>
-                            <th>합계</th>
-                            <th>선택</th>
-                        </tr>
-                    </thead>
-                    <!-- row-hover추가시 마우스 오버 색상전환효과    >>  <tbody class="row-hover">  <<  -->
-                    <tbody class="row-hover">
-
-                        <tr>
-                            <td>가나다라</td>
-                            <td>
-                                <div class="center">
-                                    <div>asasdasdadsadsadsadsadsadsadsadsadsadsadsadsadsadsd </div>
-                                </div>
-                                <div class="center">
-                                    <div class="product-Explanation">
-                                        [sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss]
-                                    </div>
-                                </div>
-                            </td>
-                            <td>가나다라</td>
-                            <td>가나다라</td>
-                            <td>가나다라</td>
-                            <td>가나다라</td>
-                            <td> <button type="button" id="btnDEL" class="btnDEL">삭제</button>
-                                <button type="button" id="btnORD" class="btnORD">주문하기</button>
-                            </td>
-                        </tr>
-
-                    </tbody>
-                    <tfooter>
-                        <tr class="total-price">
-                            <td colspan="7">
-                                <div class="center">
-                                    <div class="tb-footer tb-footer-contents">
-                                        <div>
-                                        <span>상품 금액</span>
-                                    </div>
-                                        <span>배송비</span>
-                                        <span>합계</span>
-                                    </div>
-                                  
-                                </div>
-                                <div class="center">
-                                    <div class="tb-footer price">
-                                        <span id="product-price">30000</span>
-                                        <span id="delivery-price">2500</span>
-                                        <span id="total">32500</span>
-                                    </div>
-                                </div>
-                                <!-- <td>상품금액</td>
-                            <td>배송비</td>
-                            <td>합계</td> -->
-                            </td>
-                        </tr>
-                    </tfooter>
-                </table>
-            </div>
-            <!-- ---------------------------------------------------------------------------------   -->
-
-
-
-
-        </article>
+        <!----------------------------------------  테이블 영역 ------------------------------------------>
+        <div class="center">
+          <table class="customStyle-table">
+            <thead class="thead">
+              <tr>
+                <th>이미지</th>
+                <th class="product">상품정보</th>
+                <th>판매가</th>
+                <th>수량</th>
+                <th>배송비</th>
+                <th>합계</th>
+                <th>선택</th>
+              </tr>
+            </thead>
+            <!-- row-hover추가시 마우스 오버 색상전환효과    >>  <tbody class="row-hover">  <<  -->
+            <tbody class="row-hover">
+              <tr>
+                <td>가나다라</td>
+                <td>
+                  <div class="center">
+                    <div>
+                      asasdasdadsadsadsadsadsadsadsadsadsadsadsadsadsadsd
+                    </div>
+                  </div>
+                  <div class="center">
+                    <div class="product-Explanation">
+                      [sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss]
+                    </div>
+                  </div>
+                </td>
+                <td>가나다라</td>
+                <td>가나다라</td>
+                <td>가나다라</td>
+                <td>가나다라</td>
+                <td>
+                  <button type="button" id="btnDEL" class="btnDEL">삭제</button>
+                  <button type="button" id="btnORD" class="btnORD">
+                    주문하기
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+            <tfooter>
+              <tr class="total-price">
+                <td colspan="7">
+                  <div class="center">
+                    <div class="tb-footer tb-footer-contents">
+                      <div>
+                        <span>상품 금액</span>
+                      </div>
+                      <span>배송비</span>
+                      <span>합계</span>
+                    </div>
+                  </div>
+                  <div class="center">
+                    <div class="price-box center">
+                      <div class="tb-footer price">
+                        <span id="product-price">30000</span>
+                        <span id="delivery-price">2500</span>
+                        <span id="total">32500</span>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tfooter>
+          </table>
+        </div>
+        <div class="center">
+          <button type="button" class="btnOrder">선택상품 주문</button>
+          <button type="button" class="btnContinue">쇼핑 계속하기</button>
+        </div>
+        <!-- ---------------------------------------------------------------------------------   -->
+      </article>
     </section>
 
     <!-- footer css는 default.css에 있음 -->
-    <footer>
-    </footer>
+    <footer></footer>
     <!-- <script src="../../common/include-js.js"></script> -->
     <script src="../../common/include-js.js"></script>
 
     <link rel="stylesheet" href="./shopping-basket.css" />
+    <link rel="stylesheet" href="./shopping-basket-media.css" />
+
     <script>
-        const $btnDEL = document.getElementById("btnDEL");
-        $btnDEL.addEventListener('click', asd);
+      const $btnDEL = document.getElementById("btnDEL");
+      $btnDEL.addEventListener("click", asd);
 
-        function asd() {
-            alert("qwe");
-        }
+      function asd() {
+        alert("qwe");
+      }
     </script>
-</body>
-
+  </body>
 </html>
