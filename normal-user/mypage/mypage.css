@@ -1,4 +1,8 @@
+.container{
+  width: var(--pc-container);
+}
 .strong {
+  width: 100%;
   font-size: 3rem;
 }
 .strong1 {
@@ -10,20 +14,19 @@
   align-items: center;
 }
 .contents {
-  width: 1000px;
+  width: 68%;
   height: 190px;
   border: 1px solid black;
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 250px;
+  margin-right: 200px;
 }
 .contents-box {
   width: 500px;
   height: 100px;
   padding: 15px;
-  background-color: white;
+  background-color:gray;
   z-index: 0.5;
 }
 .margin-top {
