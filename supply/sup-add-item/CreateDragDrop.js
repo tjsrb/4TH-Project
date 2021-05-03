@@ -1,11 +1,12 @@
-function CreateDragDrop() {
+function CreateDragDrop(func) {
+  this.uploadHandler = func;
   this.dropzonElem = document.createElement("div");
   this.dropzonElem.classList.add("img-upload-area");
 
   //   AddDropzonEvent
   this.dropZonEventHandler("dragover");
   this.dropZonEventHandler("dragleave");
-  this.dropZonEventHandler("drop");``
+  this.dropZonEventHandler("drop");
 
   this.uploadBtnContainerElem = document.createElement("div");
   this.uploadBtnContainerElem.classList.add("upload-btn-con");
@@ -41,24 +42,35 @@ CreateDragDrop.prototype = {
       this.eventFree(e);
       switch (type) {
         case "dragover":
-          this.dropzonElem.style.backgroundColor = "#FFA873";
-          this.dropzonElem.style.outlineOffset = "-20px";
-          break;
-        case "dragleave":
-          this.dropzonElem.style.backgroundColor = "rgb(255, 227, 211)";
+          this.dropzonElem.style.backgroundColor = "rgb(255 230 216)";
           this.dropzonElem.style.outlineOffset = "-10px";
           break;
-        case "drop":
-          let files = e.dataTransfer && e.dataTransfer.files;
-          for(let i=0;i<files.length;i++){
-              const file = files[i];
-              const UUID = this.getUUID();
-              // uploadFileArr.push({
-              //     file:file,
-              //     id:UUID
-              // });
-          }
+        case "dragleave":
+          this.dropzonElem.style.backgroundColor = "rgb(255, 247, 242)";
+          this.dropzonElem.style.outlineOffset = "0px";
           break;
+        case "drop":
+          this.dropzonElem.style.backgroundColor = "rgb(255, 247, 242)";
+          this.dropzonElem.style.outlineOffset = "0px";
+          let files = e.dataTransfer && e.dataTransfer.files;
+          if(files.length >5) {
+            alert('업로드 할 수 있는 파일은 최대 5개 입니다.');
+            return;
+          }
+          let fileArr = [];
+          for (let i = 0; i < files.length; i++) {
+            const file = files[i];
+            const UUID = this.getUUID();
+            fileArr.push({
+                file:file,
+                id:UUID
+            });
+          }
+          this.uploadHandler.filePush(fileArr);
+          this.dropzonElem.style.backgroundColor = "rgb(255, 247, 242)";
+          this.dropzonElem.style.outlineOffset = "0px";
+          break;
+
       }
     });
   },
@@ -70,5 +82,4 @@ CreateDragDrop.prototype = {
       ).toString(16)
     );
   },
-  
 };

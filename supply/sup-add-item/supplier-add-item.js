@@ -1,20 +1,64 @@
-let fileUploadArr = new Array();
-let test = () => {
-  console.log('sdfsdfsdf')
-}
-
 (() => {
   const itemName = new CustomInput("상품명");
   const tags = new CustomInput("태그");
   const price = new CustomInput("가격");
   const test = new CustomInput("배송비");
 
-  const dropzonElem = new CreateDragDrop();
-  
-  document.getElementById("itemImagesCon").appendChild(dropzonElem);
-  console.log(`므마마_2 : ${test}`)
+  const imgContainerElem = document.getElementById('uploaded-img-con');
 
+ function uploadProcess() {
+    let fileUploadArr = new Array();
 
+    function createImgElem(fileData) {
+      
+      // const deleteBtn = `<button class="img-remove-btn">X</button>`;
+      const deleteBtn = document.createElement('button');
+      deleteBtn.classList.add('img-remove-btn');
+      deleteBtn.dataset.id = fileData.id;
+      deleteBtn.innerText = "X";
+
+      deleteBtn.addEventListener('click',()=>{
+        alert(deleteBtn.dataset.id)
+      })
+
+      let uploadedElem = document.createElement('div');
+      uploadedElem.classList.add('uploaded-img');
+      // uploadedElem.dataset.id = fileData.id;
+      uploadedElem.style.backgroundImage = `url('${window.URL.createObjectURL(fileData.file)}')`;
+      uploadedElem.appendChild(deleteBtn);
+      imgContainerElem.appendChild(uploadedElem);
+    }
+
+    return {
+      filePush: function (fileDataArr) {
+        if(fileUploadArr.length + fileDataArr.length > 5) {
+          alert('업로드 가능한 파일은 최대 5개 입니다.');
+          return;
+        }
+        fileDataArr.map((data)=>{
+          fileUploadArr.push(data);
+          createImgElem(data);  
+        });
+        dropzonElem.remove();
+        if(fileUploadArr.length !==  5) {
+          dropzonElem.classList.add("uploaded-img")
+          dropzonElem.style.fontSize = "12px";
+          dropzonElem.style.outline = "2px dashed var(--main-orange);"
+          imgContainerElem.appendChild(dropzonElem);
+        }
+        
+      },
+      test: function () {
+        console.log(fileUploadArr);
+      },
+    };
+  };
+
+  const _uploadProcess = uploadProcess()
+
+  const dropzonElem = new CreateDragDrop(_uploadProcess);
+
+  document.getElementById("uploaded-img-con").appendChild(dropzonElem);
 
   // directlyUploadBtn.addEventListener("change", () => {
   //   for (let i = 0; i < directlyUploadBtn.files.length; i++) {
