@@ -1,3 +1,7 @@
+#b-searchArea {
+  display: none;
+}
+
 .contents-container {
   background-color: rgba(0, 0, 0, 0);
   min-height: 800px;
@@ -7,12 +11,12 @@
   padding-left: 0;
   box-sizing: border-box;
   position: relative;
-  max-width: 1070px;
+  width: var(--pc-container);
   margin: 70px auto 0;
 }
 /*컨텐츠 로우영역*/
 
-.table {
+table {
   display: Table;
   table-layout: fixed;
   width: 100%;
@@ -94,12 +98,6 @@ legend {
   width: 0;
   height: 0;
   line-height: 0;
-}
-.table {
-  display: Table;
-  table-layout: fixed;
-  width: 100%;
-  position: relative;
 }
 .searchField .keyword {
   border: 0;
@@ -217,7 +215,7 @@ legend {
   top: -10px;
   width: 260px;
   border-bottom: 1px solid #e0e0e0;
-  z-index: 10;
+  z-index: 9;
   background: url(/images/arrow-bg.png) no-repeat 90% center;
 }
 
@@ -291,12 +289,13 @@ path {
 .searchArea {
   border-top: 0;
   position: relative;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 }
 
 .prsear-btn {
   height: 45px;
-  border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
 }
 
 .cout-cell {
@@ -317,7 +316,7 @@ path {
 }
 /*각 영역들*/
 
-.product-list ul.grid4 > li {
+.grid4 > li {
   width: 24.73%;
   padding: 8px;
   position: relative;
@@ -342,13 +341,10 @@ path {
   padding: 20px;
   background: Rgba(0, 0, 0, 0.5);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .prd-hover:hover {
+  transition: all 0.5s ease;
   opacity: 1;
 }
 
@@ -385,10 +381,11 @@ path {
   display: table-cell;
   vertical-align: middle;
   cursor: pointer;
-  background-color: var(--main-orange);
   border-right: 1px solid #fff;
 }
-
+.prd-hover .ho-button .cart-btn:hover {
+  background-color: var(--main-orange);
+}
 .prd-hover .ho-button .cart-btn img {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
@@ -405,7 +402,9 @@ path {
   cursor: pointer;
   background-color: var(--main-orange);
 }
-
+.prd-hover .ho-button .detail-btn:hover {
+  background-color: var(--main-orange);
+}
 .prd-hover .ho-button .detail-btn img {
   -webkit-filter: brightness(0) invert(1);
   filter: brightness(0) invert(1);
@@ -473,3 +472,108 @@ path {
   font-size: 60%;
 }
 /*상품리스트 카드형 한칸*/
+@media (max-width: 1444px) {
+  .row {
+    width: 90%;
+  }
+  .prsear-btn {
+    height: 35px;
+  }
+  /*카드형*/
+  .grid4 > li {
+    width: 33%;
+  }
+}
+@media (max-width: 1000px) {
+  .prdCount .pro-order {
+    width: 240px;
+  }
+}
+@media (max-width: 852px) {
+  .path {
+    display: none;
+  }
+  table {
+    display: none;
+  }
+  .product-menuCategory {
+    display: flex;
+    justify-content: center;
+  }
+  .product-menuCategory li.cate-btit {
+    display: block;
+    margin-right: 0;
+  }
+  .product-menuCategory li.cate {
+    display: none;
+  }
+  #b-searchArea {
+    position: absolute;
+    display: inline-block;
+    top: -40px;
+    right: 0;
+    border: 0;
+    height: 38px;
+    font-family: inherit;
+    color: #fff;
+    width: 31%;
+    background: #eb5112;
+  }
+  .btnSearchdata {
+    width: 100%;
+    height: 38px;
+    color: #fff;
+    font-size: 14px;
+  }
+  .btnSearchdata:before {
+    content: "";
+    width: 12px;
+    height: 16px;
+    background: url(/images/m_icon_sort.png) center center no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    vertical-align: -3px;
+    margin-right: 4px;
+  }
+  .grid4 > li {
+    width: 49.4%;
+  }
+  .prdList .eng-name {
+    font-size: 11px;
+  }
+  .prdList .name {
+    font-size: 14px;
+  }
+  .prdList .prd-pri {
+    font-size: 15px;
+  }
+  .prdList .prd-per {
+    right: 0;
+  }
+  .categoryhashtag .heading {
+    font-size: 12px;
+    padding: 2px 11px 2px 11px;
+    margin-right: 0;
+  }
+  .categoryhashtag li a {
+    font-size: 12px;
+  }
+  .prdCount .pro-order {
+    width: 65%;
+    height: 38px;
+    border: 1px solid #e0e0e0;
+    top: -40px;
+    left: 0;
+    padding: 0 20px 0 0;
+  }
+  .prdCount .cNotice {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .prdCount .pro-ortit {
+    font-size: 14px;
+  }
+  .categoryhashtag {
+    margin-top: 0;
+  }
+}
