@@ -3,6 +3,7 @@ function CreateDragDrop(func) {
   this.dropzonElem = document.createElement("div");
   this.dropzonElem.classList.add("img-upload-area");
 
+  this.dropzonElem.style.boxShadow = "none"
   //   AddDropzonEvent
   this.dropZonEventHandler("dragover");
   this.dropZonEventHandler("dragleave");

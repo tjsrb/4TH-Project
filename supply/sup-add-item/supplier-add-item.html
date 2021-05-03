@@ -13,14 +13,29 @@
                 상품등록
             </div>
             <div class="add-item-contents">
-                
+
                 <div class="add-item-info upload-img" id="itemImagesCon">
                     <div id="uploaded-img-con" class="uploaded-img-con">
-                       
+
                     </div>
                 </div>
-                <div id="inputInfoArea" class="add-item-info upload-info">
-                    <br>
+                <div class="add-item-info upload-info">
+                    <div id="inputInfoArea">
+
+                    </div>
+                    <p class="input-color-title" data-tip="tooltip" title="클릭하여 선택">색상옵션</p>
+
+                    <div class="choos-color-container">
+                        <div class="choos-color-input">
+
+                            <input type="color" id="choosColor">
+                            <label id="choosColor-label" data-tip="tooltip" title="클릭하여 선택" for="choosColor" class="choos-color"></label>
+                        </div>
+                        <div class="get-choos-color">
+                            <div class="choosed-color"></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -29,6 +44,7 @@
     </footer>
     <link rel="stylesheet" href="./supplier-add-item.css">
     <script src="../../common/include-js.js"></script>
+    <script src="../../common/util/Tooltip/tooltip.js"></script>
     <script src="./CustomInput.js"></script>
     <script src="./CreateDragDrop.js"></script>
     <script src="./supplier-add-item.js"></script>
