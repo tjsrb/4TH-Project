@@ -9,6 +9,7 @@
   height: 24px;
   outline: 0;
   border: 1px solid #ececec;
+  border-radius: 100%;
   cursor: pointer;
   background-image: url(//img.echosting.cafe24.com/skin/base/product/bg_colorchip_circle_23.png);
   background-repeat: no-repeat;
@@ -27,8 +28,8 @@
   left: 5.5%;
   top: 16%;
   border: 1px solid #2d2d2d;
-  margin-top: -12px;
-  margin-left: -12px;
+  margin-top: -13px;
+  margin-left: -16px;
   box-sizing: border-box;
 }
 
@@ -44,7 +45,7 @@
   width: 23px;
   height: 23px;
   outline: 0;
-  cursor: pointer;
+  border-radius: 100%;
   background-image: url(//img.echosting.cafe24.com/skin/base/product/bg_colorchip_circle_23.png);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -125,4 +126,19 @@
 }
 .searchArea tr .colorChip li .c25 {
   background-color: #760016;
+}
+
+@media (max-width: 800px) {
+  .description .inner-description .colors .color {
+    margin-bottom: 0;
+  }
+  .description .inner-description .colors .color .chips {
+    width: 15px;
+    height: 15px;
+    background-position: 0 15px;
+    margin-right: 2px;
+  }
+  .description .inner-description .colors .color .chips:hover:after {
+    display: none;
+  }
 }
