@@ -8,7 +8,7 @@
 
     if (elem.classList.contains("item-img-inTable")){
         console.log(elem.getAttribute("src"))
-        window.open(`http://127.0.0.1:5500/4TH-Project/${elem.getAttribute("src")}`);
+        window.open(`http://127.0.0.1:5501/4TH-Project/${elem.getAttribute("src")}`);
 
         return;
     }

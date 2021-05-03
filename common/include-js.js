@@ -10,6 +10,6 @@ function bindPage(id){
         }
     };
     console.log();
-    xhttp.open("GET", "http://127.0.0.1:5500/common/" + id + "/" + id+".html", true);
+    xhttp.open("GET", "http://127.0.0.1:5501/common/" + id + "/" + id+".html", true);
     xhttp.send();
 }
