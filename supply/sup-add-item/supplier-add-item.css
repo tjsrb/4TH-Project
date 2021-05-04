@@ -73,11 +73,12 @@
 
 .add-item-contents {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .add-item-info:nth-child(1) {
   display: flex;
+  flex-shrink: 0;
   flex-basis: 46%;
   min-height: 450px;
   height: 0px;
@@ -94,7 +95,6 @@
 .uploaded-img {
   outline: 1px solid #ddd;
 }
-
 
 .uploaded-img:nth-child(1):not(.img-upload-area) {
   position: relative;
@@ -120,8 +120,9 @@
 }
 
 .add-item-info:nth-child(2) {
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 54%;
   padding-left: 60px;
 }
 
@@ -180,41 +181,18 @@
 }
 .choos-color-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 10px 0;
   border: 1px dotted gray;
-}
-.choos-color-input {
-  align-items: center;
-  flex-basis: 40%;
-  display: flex;
-  /* flex-direction: column; */
-}
-.get-choos-color {
-  display: flex;
-  align-items: flex-end;
-  width: 100%;
-}
-#choosColor {
-  /* position: relative; */
-  /* top: 35px; */
-  opacity: 0;
 }
 .input-color-title {
   position: relative;
   top: -3px;
   font-size: large;
 }
-label{
-  display:inline-block;
-}
 .choos-color {
-  cursor: pointer;
-  border-radius: 50%;
-  border: 1px solid gray;
-  width: 35px;
-  height: 35px;
-}
-.choosed-color {
+  margin: 3px 10px;
   cursor: pointer;
   border-radius: 50%;
   border: 1px solid gray;

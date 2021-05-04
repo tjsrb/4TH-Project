@@ -1,18 +1,17 @@
 (() => {
-  const itemName = new CustomInput("상품명");
-  const tags = new CustomInput("태그");
-  const price = new CustomInput("가격");
-  const test = new CustomInput("배송비");
+  const itemName = new CustomInput("inputInfoArea", "상품명");
+  const tags = new CustomInput("inputInfoArea", "태그");
+  const price = new CustomInput("inputInfoArea", "가격");
+  const test = new CustomInput("inputInfoArea", "배송비");
+
 
   const imgContainerElem = document.getElementById("uploaded-img-con");
 
-  const choosColorElem = document.getElementById('choosColor');
 
   function uploadProcess() {
     let fileUploadArr = new Array();
 
     function createImgElem(fileData) {
-
       const deleteBtn = document.createElement("button");
       deleteBtn.classList.add("img-remove-btn");
       deleteBtn.dataset.id = fileData.id;
@@ -49,7 +48,7 @@
         }
         fileDataArr.map((data) => {
           fileUploadArr.push(data);
-          createImgElem(data);
+          createImgElem(data); 
         });
         dropzonElem.remove();
         if (fileUploadArr.length !== 5) {
@@ -59,21 +58,12 @@
           imgContainerElem.appendChild(dropzonElem);
         }
       },
-      test: function () {
-        console.log(fileUploadArr);
-      },
     };
   }
-
-  choosColorElem.addEventListener('change',()=>{
-    
-    // alert(choosColorElem.value)
-  })
 
   const _uploadProcess = uploadProcess();
 
   const dropzonElem = new CreateDragDrop(_uploadProcess);
 
   document.getElementById("uploaded-img-con").appendChild(dropzonElem);
-
 })();
