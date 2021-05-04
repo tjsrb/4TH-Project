@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1195px) {
   .media-btn-box {
     display: block;
     width: 100%;
@@ -93,5 +93,33 @@
   }
   .font-size {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .tumbnail {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .tumbnail {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 280px) {
+  .body-domain {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .media-btn-box {
+  }
+  .btn-shopping-contents {
+    position: relative;
+    margin-left: 75px;
+  }
+  .prdbox {
+    flex-wrap: wrap;
+  }
+  .tumbnail {
+    width: 800px;
   }
 }

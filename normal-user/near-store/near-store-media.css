@@ -1,53 +1,80 @@
-@media screen and (max-width: 1330px) {
-    .body-container{
-        width: 100%;
-    }
+@media screen and (max-width: 1195px) {
+  .body-container {
+    width: 100%;
+  }
+  /* .store-name {
+    width: 100%;
+    flex-direction: row;
+  }
+  .map {
+    order: 2;
+  }
+  .cloth-list {
+    order: 3;
+  }
+  .media-store-name {
+    display: block;
+  }
+  .store-name-flex {
+    width: 100%;
+    border: 1px solid black;
+  } */
 }
-@media screen and (max-width: 768px) {
-    
-    .near-text {
-        width: 100%;
-        margin:15px;
-    }
-    .near-text span {
-        margin-right:0px;
-        height: 30px;
-      }
-    .body-container {
-        width: 100%;
-       flex-direction: column;
-       padding: 15px;
-       border: none;
+@media screen and (max-width: 1195px) {
+  .cloth-list-container {
+    display: none;
+  }
+  .media-store-name {
+    display: none;
+  }
+  .media-cloth-list-container {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .near-text {
+    width: 100%;
+    margin: 15px;
+  }
+  .near-text span {
+    margin-right: 0px;
+    height: 30px;
+  }
+  .body-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 15px;
+    border: none;
+  }
+  .store-name {
+    width: 100%;
+    order: 2;
+    border: none;
+  }
+  .map {
+    order: 1;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    border: none;
+  }
+  .cloth-list {
+    order: 3;
+    width: 100%;
+    border: none;
+    margin: 0;
+  }
+  .map-container {
+    width: 100%;
+  }
 
-      }
-    .store-name {   
-        width: 100%;
-        order: 2; 
-        border: none;
-      }
-      .map {
-        order: 1; 
-        height: 800px;
-        width: 100%;
-        display: flex;
-        border: none;
-    }
-      .cloth-list {
-        order: 3; 
-        width: 100%;
-        border: none;
-        margin: 0;
-      }      
-      .map-container{
-          width: 100%;
-      }
-      
-      .store-name-box{
-          display: flex;
-          justify-content: center;
-          margin-top: 15px;
-      }
-      .cloth-list-container{
-          display: flex;
-      }
+  .store-name-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+
+  .contents-area {
+  }
 }
