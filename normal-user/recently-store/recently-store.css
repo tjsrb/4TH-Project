@@ -1,75 +1,91 @@
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.container{
-    width: var(--pc-container);
-    height: 1000px;
-  }
-.recently-address{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-    border: 1px solid black;
+.container {
+  width: var(--pc-container);
+  height: 1000px;
 }
-img{
-    width: 100%;
-    height: 100%;
+.recently-address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  height: 200px;
+  border: 1px solid black;
 }
-.circle{
-    background-image: url(../../images/img.png);
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
+img {
+  width: 100%;
+  height: 100%;
 }
-.recently-store-address{
-    font-size: 0.9rem;
+.circle {
+  background-image: url(../../images/img.png);
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
 }
-.recently-map{
-    width: 500px;
-    height: 100%;
-    border: 1px solid black;
+.recently-store-address {
+  font-size: 0.9rem;
 }
-.recently-address-contents{
-    margin: 15px;
+.recently-map {
+  width: 500px;
+  height: 100%;
+  border: 1px solid black;
 }
-li{
-    float: left;
+.recently-address-contents {
+  margin: 15px;
 }
-.category{
-    height: 30px;
-    border: 0.5px solid gray;
+li {
+  float: left;
 }
-.category li{
-    text-align: center;
-    width: 50px;
-    border: 0.5px solid gray;
-    border-radius: 5px;
-    margin-left: 30px;
+.category {
+  height: 30px;
+  border: 0.5px solid gray;
 }
-.category li:hover{
-    background-color: gray;
+.category li {
+  text-align: center;
+  width: 50px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  margin-left: 30px;
 }
-.cloths-box{
-    border: 1px solid black;
-    width: 70%;
-    height: 700px;
+.category li:hover {
+  background-color: gray;
 }
-.clonths-img-box{
-    width: 200px;
-    height: 200px;
+.cloths-box {
+  border: 1px solid black;
+  width: 100%;
+  height: 700px;
 }
-.clo{
-    border: 1px solid black;
-    width: 240px;
-    margin: 15px;
+.clonths-img-box {
+  width: 200px;
+  height: 200px;
 }
-.cloths-Information{
-    margin-left: 15px;
+.clo {
+  border: 1px solid black;
+  width: 240px;
+  margin: 15px;
+  position: relative;
 }
-.information-flex{
-    display: flex;
+.cloths-Information {
+  margin-left: 15px;
+}
+.information-flex {
+  display: flex;
+}
+.clo:hover {
+  opacity: 0.5;
+}
+.btn-asd {
+  position: absolute;
+  bottom: 0;
+  right: -0;
+  z-index: 10;
+}
+.btn {
+  background-color: orange;
+  width: 100px;
+  height: 40px;
 }
