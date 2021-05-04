@@ -1,4 +1,4 @@
-.flex{
+.flex {
   display: flex;
 }
 img {
@@ -43,7 +43,7 @@ img {
 .store-name-text span {
   flex-direction: column;
 }
-.cloth-list-container{
+.cloth-list-container {
   height: 100%;
 }
 .img-box {
@@ -61,10 +61,27 @@ img {
   border: 1px solid black;
   margin: 15px;
 }
-.img-combo-box{
+.img-combo-box {
   width: 80px;
-  height: 80px ;
+  height: 80px;
 }
-.combo-box-contents{
+.combo-box-contents {
   margin: 15px;
+}
+select {
+  width: 200px;
+  padding: 0.8em 0.5em;
+  border: 1px solid #999;
+  font-family: inherit;
+  background: url("../../images/combo.png") no-repeat 95% 50%;
+  border-radius: 0px;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.media-cloth-list-container {
+  display: none;
+}
+.media-store-name {
+  display: none;
 }
