@@ -75,13 +75,18 @@ li {
 .information-flex {
   display: flex;
 }
-.clo:hover {
-  opacity: 0.5;
+.opacity:hover .hiddenBtn{
+    /* opacity:0.5; */
+    display: block;
 }
+.hiddenBtn{
+    display: none;
+}
+
 .btn-asd {
   position: absolute;
-  bottom: 0;
-  right: -0;
+    top:220px;
+  right: 16px;
   z-index: 10;
 }
 .btn {
