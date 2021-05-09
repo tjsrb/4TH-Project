@@ -1,0 +1,32 @@
+@media screen and (max-width: 1195px) {
+  .recently-address {
+    background-color: orangered;
+  }
+  .container {
+    width: 100%;
+  }
+  .clonths-img-box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 930px) {
+  .container {
+    width: auto;
+  }
+  .recently-address {
+    flex-direction: column;
+    height: auto;
+    background-color: white;
+  }
+  .recently-map {
+    background-color: orchid;
+    order: 1;
+    height: 150px;
+  }
+  .store-Explanation {
+    order: 2;
+  }
+  .information-flex {
+    flex-wrap: wrap;
+  }
+}
