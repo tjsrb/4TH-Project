@@ -7,21 +7,69 @@
 <body>
     <header>
     </header>
+    <div id="dialog" class="dialog">
+        <div id="uploadDetailImgArea" class="upload-detail-img">
+            <button id="dialogCloseBtn"><i class="fas fa-times"></i></button>
+            <div id="upload-util" class="upload-util">
+                
+                드래그앤 드랍 하여 이미지 업로드<br>
+                권장 : 가로770px 용량 500mb이하
+                <input type="file" id="detailImgUpload">
+                <label for="detailImgUpload" id="detailImgUploadLabel" class="detail-img-btn">직접 선택하여 업로드</label>
+            </div>
+            <div id="viewDetailImg" class="uploaded-detail-img">
+               
+            </div>
+        </div>
+        <br>
+    </div>
     <section class="contents-area contents-area-padding">
         <div class="supplier-main-con">
             <div class="add-item-page-title">
                 상품등록
             </div>
             <div class="add-item-contents">
-                
+
                 <div class="add-item-info upload-img" id="itemImagesCon">
+                    <button id="detailImgBtn"> 상품 상세이미지 등록 </button>
                     <div id="uploaded-img-con" class="uploaded-img-con">
-                       
+
                     </div>
                 </div>
-                <div id="inputInfoArea" class="add-item-info upload-info">
+                <div class="add-item-info upload-info">
+                    <div id="inputInfoArea">
+
+                    </div>
+                    <div class="color-option-container">
+                        <p class="input-color-title">색상옵션</p>
+                        <button id="addColorOptionBtn" class="add-color-option" data-type="add"><i class="fas fa-plus"
+                                data-type="remove"></i></button>
+
+                    </div>
+                    <div id="colorOptionAppend">
+
+                    </div>
                     <br>
+                    <br>
+                    <div class="size-option-container">
+                        <p class="input-size-title">사이즈옵션</p>
+                        <button id="addSizeOptionBtn" class="add-size-option" data-type="add"><i class="fas fa-plus"
+                                data-type="remove"></i></button>
+
+                    </div>
+                    <div id="sizeOptionAppend">
+
+                    </div>
                 </div>
+
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="appendDetailImg" id="appendDetailImg">
+                <!-- <img src="https://akamai.poxo.com/mall66/66girls.co.kr/web/2021/5MAY/1/2100506-ej-1%20(2).jpg" alt=""> -->
+                <img id="appendDetailImgTag" src="" alt="">
             </div>
         </div>
     </section>
@@ -32,6 +80,7 @@
     <script src="./CustomInput.js"></script>
     <script src="./CreateDragDrop.js"></script>
     <script src="./supplier-add-item.js"></script>
+    <script src="../../common/util/Tooltip/tooltip.js"></script>
 
 </body>
 

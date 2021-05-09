@@ -1,4 +1,4 @@
-function CustomInput(title){
+function CustomInput(id,title){
 
     this.containerElem = document.createElement("div");
     this.containerElem.classList.add('info-input-group');
@@ -15,8 +15,7 @@ function CustomInput(title){
     this.containerElem.appendChild(this.inputElem);
     this.containerElem.appendChild(this.labelElem);
 
-
-    document.getElementById('inputInfoArea').appendChild(this.containerElem);
+    document.getElementById(id).appendChild(this.containerElem);
 }
 
 CustomInput.prototype = {

@@ -3,6 +3,7 @@ function CreateDragDrop(func) {
   this.dropzonElem = document.createElement("div");
   this.dropzonElem.classList.add("img-upload-area");
 
+  this.dropzonElem.style.boxShadow = "none";
   //   AddDropzonEvent
   this.dropZonEventHandler("dragover");
   this.dropZonEventHandler("dragleave");
@@ -15,6 +16,10 @@ function CreateDragDrop(func) {
   this.inputForUploadElem.setAttribute("type", "file");
   this.inputForUploadElem.setAttribute("id", "fileUploadInput");
   this.inputForUploadElem.setAttribute("multiple", "multiple");
+
+  this.inputForUploadElem.addEventListener("change", (e) => {
+    this.fileUploadProcess(this.inputForUploadElem.files);
+  });
 
   this.labelForUploadElem = document.createElement("label");
   this.labelForUploadElem.setAttribute("for", "fileUploadInput");
@@ -37,6 +42,22 @@ CreateDragDrop.prototype = {
     e.stopPropagation();
     e.preventDefault();
   },
+  fileUploadProcess: function (files) {
+    if (files.length > 5) {
+      alert("업로드 할 수 있는 파일은 최대 5개 입니다.");
+      return;
+    }
+    let fileArr = [];
+    for (let i = 0; i < files.length; i++) {
+      const file = files[i];
+      const UUID = this.getUUID();
+      fileArr.push({
+        file: file,
+        id: UUID,
+      });
+    }
+    this.uploadHandler.filePush(fileArr);
+  },
   dropZonEventHandler: function (type) {
     this.dropzonElem.addEventListener(type, (e) => {
       this.eventFree(e);
@@ -53,24 +74,12 @@ CreateDragDrop.prototype = {
           this.dropzonElem.style.backgroundColor = "rgb(255, 247, 242)";
           this.dropzonElem.style.outlineOffset = "0px";
           let files = e.dataTransfer && e.dataTransfer.files;
-          if(files.length >5) {
-            alert('업로드 할 수 있는 파일은 최대 5개 입니다.');
-            return;
-          }
-          let fileArr = [];
-          for (let i = 0; i < files.length; i++) {
-            const file = files[i];
-            const UUID = this.getUUID();
-            fileArr.push({
-                file:file,
-                id:UUID
-            });
-          }
-          this.uploadHandler.filePush(fileArr);
+ 
+          this.fileUploadProcess(files);
+ 
           this.dropzonElem.style.backgroundColor = "rgb(255, 247, 242)";
           this.dropzonElem.style.outlineOffset = "0px";
           break;
-
       }
     });
   },

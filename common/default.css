@@ -10,6 +10,14 @@
 }
 /* 1320 */
 
+.tooltip-on {
+  display: block;
+}
+
+.tooltip-off {
+  display: none;
+}
+
 html {
   word-wrap: break-word;
 }
