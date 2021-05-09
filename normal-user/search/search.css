@@ -493,6 +493,15 @@ path {
   .path {
     display: none;
   }
+  .searchField .keyword {
+    width: 85%;
+    height: 38px;
+    font-size: 14px;
+  }
+  .searchField .buttonSearch {
+    height: 38px;
+    width: 38px;
+  }
   table {
     display: none;
   }
@@ -575,5 +584,21 @@ path {
   }
   .categoryhashtag {
     margin-top: 0;
+  }
+}
+@media (max-width: 630px) {
+  .searchField .keyword {
+    width: 80%;
+  }
+}
+
+@media (max-width: 490px) {
+  .searchField .keyword {
+    width: 75%;
+  }
+}
+@media (max-width: 400px) {
+  .searchField .keyword {
+    width: 70%;
   }
 }
