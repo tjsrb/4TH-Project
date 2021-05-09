@@ -3,6 +3,11 @@
   <head> </head>
   <body>
     <div class="comm-header">
+      <ul class="m-header-top-menu header-nav-menu">
+        <li class="m-cate"><a href="#"><img src="/images/icon_allcate.png"></a></li>
+        <li class="m-logo"><a href="#">로고</a></li>
+        <li class="m-search"><a href="#"><button type="button"></a></li>
+      </ul>
       <div class="header-row">
         <nav class="header-contents">
           <ul class="header-logo header-nav-menu">
@@ -15,15 +20,34 @@
           </ul>
         </nav>
       </div>
+      <ul class="m-header-bottom-menu header-nav-menu">
+        <li class="m-home"><a href="#"><img src="/images/mo-quick03.png"></a></li>
+        <li class="m-near"><a href="#">내주변</a></li>
+      </ul>
       <div class="header-row">
         <nav class="header-contents">
+          </ul>
           <ul class="header-bottom-light header-nav-menu">
-            <li><a href="#">카테고리</a></li>
+            <!-- <li>
+              <a href="#"
+                >카테고리
+                <div class="ham-menu"><span></span></div
+              ></a>
+            </li>
             <li><a href="#">홈</a></li>
-            <li><a href="#">내주변</a></li>
+            <li><a href="#">내주변</a></li> -->
+            <div class="cate">
+              <a href="#"
+                >카테고리
+                <div class="ham-menu">
+                  <span></span><span></span><span></span></div
+              ></a>
+            </div>
+            <div class="light-menu"><a href="#">홈</a></div>
+            <div class="light-menu"><a href="#">내주변</a></div>
           </ul>
           <ul class="header-bottom-left header-nav-menu">
-            <li><a href="#">검색</a></li>
+            <!-- <li><a href="#">검색</a></li>
             <li>
               <a href="../../normal-user/mypage/mypage.html">마이페이지</a>
             </li>
@@ -31,8 +55,27 @@
               <a href="../../normal-user/shopping-basket/shopping-basket.html"
                 >장바구니</a
               >
-            </li>
-          </ul>
+            </li> -->
+            <div class="q-search">
+              <a href="#"
+                ><input /><img src="/images/gnb-icon01.png" class="search_btn"
+              /></a>
+            </div>
+            <div class="bottom-menu">
+              <a href="../../normal-user/mypage/mypage.html"
+                ><img src="/images/gnb-icon02.png" />마이페이지<span
+                  >off</span
+                ></a
+              >
+            </div>
+            <div class="bottom-menu">
+              <a href="../../normal-user/shopping-basket/shopping-basket.html"
+                ><img src="/images/gnb-icon04.png" />장바구니<span
+                  class="basket"
+                  >0</span
+                ></a
+              >
+            </div>
         </nav>
       </div>
     </div>
