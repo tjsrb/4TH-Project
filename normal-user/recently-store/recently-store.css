@@ -7,16 +7,12 @@
   width: var(--pc-container);
   height: 1000px;
 }
-.store-Explanation {
-  display: flex;
-  align-items: center;
-}
 .recently-address {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: orange;
+
   height: 200px;
   border: 1px solid black;
 }
@@ -50,6 +46,7 @@ li {
 }
 .category li {
   text-align: center;
+  width: 50px;
   border: 0.5px solid gray;
   border-radius: 5px;
   margin-left: 30px;
@@ -78,27 +75,17 @@ li {
 .information-flex {
   display: flex;
 }
-.clo:hover .hiddenBtn {
-  display: block;
-  display: flex;
-}
-.hiddenBtn {
-  display: none;
+.clo:hover {
+  opacity: 0.5;
 }
 .btn-asd {
-  display: flex;
   position: absolute;
-  right: 15px;
-  left: 15px;
-  top: 210px;
+  bottom: 0;
+  right: -0;
   z-index: 10;
-}
-.btn-box {
-  padding: 10px;
-  width: 100px;
 }
 .btn {
   background-color: orange;
-  width: 100%;
+  width: 100px;
   height: 40px;
 }
