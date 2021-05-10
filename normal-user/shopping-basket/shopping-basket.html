@@ -16,7 +16,11 @@
         <div class="body-domain center">
           <div class="center media-btn-box">
             <div class="meida-btn-box-contents">
-              <input type="checkbox" class="ckALL" />전체선택
+              <input
+                class="itemAllcheck"
+                id="itemAllcheck"
+                type="checkbox"
+              />전체선택
               <div class="btn-shopping-contents">
                 <button type="button" class="btn-shopping-DELTE">
                   장바구니 지우기
@@ -27,20 +31,37 @@
           </div>
         </div>
         <div class="meida-btn-box-contents">
-          <input type="checkbox" class="ckALL" />
+          <input class="itemCheck" type="checkbox" />
         </div>
         <div class="prdbox">
           <div class="tumbnail">
             <img src="../../images/img.png" class="img" />
           </div>
           <div class="discription">
-            플로럴 원피스 ㅁㄴㅇㅁㄴㅇㅁㄴㅇ
+            플로럴 원피스
+            <div class="Detail-text">옵션: 그린</div>
+            <div class="Detail-price">139,000원</div>
+            <ul class="info">
+              1
+            </ul>
+            <div class="delivery-price">5만원 이상 구매시 무료 / 3,000원</div>
+          </div>
+        </div>
+        <div class="meida-btn-box-contents">
+          <input class="itemCheck" type="checkbox" />
+        </div>
+        <div class="prdbox">
+          <div class="tumbnail">
+            <img src="../../images/img.png" class="img" />
+          </div>
+          <div class="discription">
+            플로럴 원피스
             <div class="Detail-text">옵션: 그린</div>
             <div class="Detail-price">139,000</div>
             <ul class="info">
               1
             </ul>
-            <div class="delivery-price">asd</div>
+            <div class="delivery-price">5만원 이상 구매시 무료 / 3,000원</div>
           </div>
         </div>
         <!-- -------------------------------            -->
@@ -130,17 +151,8 @@
     <footer></footer>
     <!-- <script src="../../common/include-js.js"></script> -->
     <script src="../../common/include-js.js"></script>
-
+    <script src="./shopping-basket.js"></script>
     <link rel="stylesheet" href="./shopping-basket.css" />
     <link rel="stylesheet" href="./shopping-basket-media.css" />
-
-    <script>
-      const $btnDEL = document.getElementById("btnDEL");
-      $btnDEL.addEventListener("click", asd);
-
-      function asd() {
-        alert("qwe");
-      }
-    </script>
   </body>
 </html>
