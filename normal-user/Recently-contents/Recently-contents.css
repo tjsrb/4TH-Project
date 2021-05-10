@@ -4,15 +4,15 @@
   justify-content: center;
 }
 
-.inputTag{
- display: none;
+.inputTag {
+  display: none;
 }
 .slide-container {
   display: flex;
   height: 1000px;
   width: var(--pc-container);
 }
-.img{
+.img {
   width: 100%;
   height: 100%;
 }
@@ -42,11 +42,9 @@
   border-top: 1px solid #ddd;
 }
 
-.input-tab{
+.input-tab {
   display: none;
 }
-
-
 
 label {
   display: inline-block;
@@ -150,4 +148,16 @@ select {
 }
 .total-price {
   font-size: 2rem;
+}
+.contents-name {
+  font-size: 1.8rem;
+  margin: 30px;
+}
+.contents-Recently-Explanation {
+  font-size: 0.9rem;
+  width: 400px;
+  height: 400px;
+  margin-left: 30px;
+  color: var(--main gray);
+  border: 1px solid gray;
 }

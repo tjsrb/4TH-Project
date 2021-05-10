@@ -6,7 +6,7 @@
 td {
   padding: 15px;
 }
-.container{
+.container {
   width: var(--pc-container);
 }
 .shopping-bag {
@@ -78,24 +78,6 @@ td {
 
 .customStyle-table td {
   padding: 10px;
-}
-
-input[type="checkbox"] {
-  position: relative;
-  top: 3px;
-  width: 18px;
-  height: 18px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-appearance: none;
-  background-image: url(../images/checkbox/check_off.png);
-  cursor: pointer;
-}
-
-input[type="checkbox"]:checked {
-  cursor: pointer;
-  background-image: url(../images/checkbox/check_on.png);
 }
 
 .row-hover tr:hover {
