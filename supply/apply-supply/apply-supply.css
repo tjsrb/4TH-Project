@@ -1,0 +1,25 @@
+.contents-area-padding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.supplier-main-con {
+  padding: 0 10px;
+  margin: 50px 0 40px 0;
+  flex-direction: column;
+  width: var(--pc-container);
+}
+
+.sup-page-title {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+  font-family: "IBMPlexSansKR-SemiBold";
+  color: rgba(36, 36, 36, 0.932);
+}
+
+.supply-info-group {
+    min-width: 800px;
+}
