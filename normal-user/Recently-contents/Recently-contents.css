@@ -3,13 +3,15 @@
   align-items: center;
   justify-content: center;
 }
-
+.container {
+  height: 100%;
+}
 .inputTag {
   display: none;
 }
 .slide-container {
   display: flex;
-  height: 1000px;
+  height: auto;
   width: var(--pc-container);
 }
 .img {
@@ -30,7 +32,7 @@
   background-color: darkgrey;
   height: 400px;
 }
-.main {
+.tab {
   padding: 10px;
   height: 500px;
   background: #ffffff;
@@ -66,7 +68,6 @@ input:checked + label {
   border-top: 2px solid #2e9cdf;
   border-bottom: 1px solid #ffffff;
 }
-
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
 #tab3:checked ~ #content3,
@@ -160,4 +161,7 @@ select {
   margin-left: 30px;
   color: var(--main gray);
   border: 1px solid gray;
+}
+.mobile-contents {
+  display: none;
 }

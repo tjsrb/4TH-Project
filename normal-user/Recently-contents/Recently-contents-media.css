@@ -1,0 +1,31 @@
+@media screen and (max-width: 1195px) {
+  .slide-domain {
+    width: 400px;
+  }
+  .mobile-contents {
+    display: block;
+    width: 100%;
+  }
+  .contents-Explanation {
+    display: none;
+  }
+  .slide-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tab {
+    display: none;
+  }
+  .contents-explain {
+    margin: 30px;
+    border-top: 1px solid gray;
+    font-size: 1.5rem;
+  }
+  .media-contents-Explanation {
+    background-color: wheat;
+    font-size: 0.9rem;
+    color: gray;
+  }
+}
