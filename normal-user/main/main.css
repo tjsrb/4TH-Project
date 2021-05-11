@@ -5,6 +5,17 @@
   justify-content: center;
   align-items: center;
 }
+.container {
+  width: var(--pc-container);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.banner {
+  height: 630px;
+}
+.content1 {
+  height: 690px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 .event-solid {
   display: flex;
   justify-content: center;
@@ -88,9 +99,8 @@
   font-size: 0.8rem;
   margin-top: 550px;
 }
-.comm-footer{
+.comm-footer {
   border: 1px solid black;
 }
 @media screen and (max-width: 768px) {
-  
 }

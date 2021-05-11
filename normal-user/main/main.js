@@ -5,3 +5,4 @@ function init() {
         $hashtag[i].addEventListener("click", )
     }
 }
+
