@@ -24,8 +24,12 @@
     font-size: 1.5rem;
   }
   .media-contents-Explanation {
-    background-color: wheat;
+    background-color: honeydew;
+  }
+  .media-Explanation {
+    width: 80%;
     font-size: 0.9rem;
     color: gray;
+    background-color: wheat;
   }
 }
