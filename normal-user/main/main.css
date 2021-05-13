@@ -7,15 +7,215 @@
 }
 .container {
   width: var(--pc-container);
-  background-color: rgba(0, 0, 0, 0.1);
+}
+.slide {
+  width: 593px;
 }
 .banner {
   height: 630px;
+  overflow: hidden;
+}
+.banner > div > div > div {
+  width: 593px;
+  height: 690px;
+  margin-right: 14px;
+  display: inline-block;
+}
+/*언니한테 슬라이드 물어보기*/
+.banner > div > div > div > .banner-img {
+  position: relative;
+}
+.s-cont1 > div > div > div > .banner-img > img {
+  display: block;
+  border: 1px solid gray;
+  background-size: cover;
 }
 .content1 {
+  margin-top: 120px;
   height: 690px;
-  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
+.content1 .content-h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.tab ul {
+  position: relative;
+  margin: 0 auto 14px;
+  text-align: center;
+  max-width: 740px;
+  font-size: 0;
+}
+.tab li {
+  display: inline-block;
+  width: 20%;
+  text-align: Center;
+  line-height: 64px;
+  color: #000;
+  font-size: 15px;
+  border: 1px solid #e8e8e8;
+  margin: -0.5px;
+  cursor: pointer;
+}
+.grid4 > li {
+  width: 24.73%;
+  padding: 8px;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 30px;
+  color: #757575;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.product-list .prdList .thumbnail {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.prd-hover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: Rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+
+.prd-hover:hover {
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.prd-hover .ho-button {
+  margin-top: 10px;
+  border: 1px solid #c5c5c5;
+  display: Table;
+  width: 100%;
+  table-layout: fixed;
+  height: 50px;
+}
+
+.detail-btn a,
+.cart-btn {
+  font-size: 14px;
+  color: #fff;
+  text-align: Center;
+  display: block;
+}
+
+.prd-hover .ho-button .ho-icon {
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+.prd-hover .ho-button .cart-btn {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  border-right: 1px solid #fff;
+}
+.prd-hover .ho-button .cart-btn:hover {
+  background-color: var(--main-orange);
+}
+.prd-hover .ho-button .cart-btn img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  padding-top: 4px;
+}
+
+.prd-hover .ho-button .detail-btn {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: var(--main-orange);
+}
+.prd-hover .ho-button .detail-btn:hover {
+  background-color: var(--main-orange);
+}
+.prd-hover .ho-button .detail-btn img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+  padding-top: 4px;
+}
+
+.prdList .description {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 10px 0 15px;
+  text-align: left;
+  position: relative;
+}
+
+.prdList .eng-name {
+  letter-spacing: 0;
+  color: #aaa;
+  font-size: 16px;
+}
+
+.prdList .name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #444;
+  font-size: 18px;
+  text-align: left;
+}
+
+.prdList .eng-name span {
+  font-size: 12pz;
+}
+
+.prdList .prd-pri {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: left;
+  position: relative;
+}
+
+.prdList .prd-pr {
+  margin-right: 5px;
+  color: #000;
+}
+
+.prdList .prd-pri em {
+  font-size: 60%;
+  font-style: normal;
+}
+
+.prdList .prd-pr + .prd-de {
+  text-decoration: line-through;
+}
+
+.prdList .prd-de {
+  color: #b6b6b6;
+  font-size: 65%;
+  font-weight: 400;
+}
+
+.prdList .prd-per {
+  color: #f1592a;
+  position: absolute;
+  right: 7px;
+  bottom: 2px;
+  font-size: 60%;
+}
+/**/
 .event-solid {
   display: flex;
   justify-content: center;
