@@ -1,0 +1,28 @@
+.info-input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-input-group label {
+  transition: 0.2s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: large;
+}
+.info-input-group input[type="text"],.info-input-group input[type="password"],.info-input-group input[type="email"],.info-input-group input[type="number"] {
+  margin-bottom: 55px;
+  font-size: x-large;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.info-input-group input[type="text"]:focus, 
+.info-input-group input[type="password"]:focus, 
+.info-input-group input[type="email"]:focus, 
+.info-input-group input[type="number"]:focus {
+  border-bottom: 2px solid orangered;
+}

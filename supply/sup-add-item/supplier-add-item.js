@@ -1,8 +1,9 @@
 (() => {
-  const itemName = new CustomInput("inputInfoArea", "상품명");
-  const tags = new CustomInput("inputInfoArea", "태그");
-  const price = new CustomInput("inputInfoArea", "가격");
-  const test = new CustomInput("inputInfoArea", "배송비");
+  const itemName = new CustomInput("inputInfoArea", "상품명",[]);
+  console.log(itemName)
+  const tags = new CustomInput("inputInfoArea", "태그",[]);
+  const price = new CustomInput("inputInfoArea", "가격",[]);
+  const test = new CustomInput("inputInfoArea", "배송비",[]);
 
   const imgContainerElem = document.getElementById("uploaded-img-con");
 
