@@ -1,0 +1,144 @@
+.description .inner-description .colors .color {
+  max-width: 190px;
+  margin-bottom: 10px;
+  height: 20px;
+}
+.description .inner-description .colors .color .chips {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  outline: 0;
+  border: 1px solid #ececec;
+  border-radius: 100%;
+  cursor: pointer;
+  background-image: url(//img.echosting.cafe24.com/skin/base/product/bg_colorchip_circle_23.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.description .inner-description .colors .color .chips {
+  background-color: #000;
+}
+.description .inner-description .colors .color .chips:hover:after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 100%;
+  left: 15%;
+  top: 73%;
+  border: 1px solid #2d2d2d;
+  margin-top: -13px;
+  margin-left: -16px;
+  box-sizing: border-box;
+}
+
+.searchArea tr .colorChip li {
+  position: relative;
+  display: inline-block;
+  margin: 7px 5px;
+  text-align: center;
+  vertical-align: middle;
+}
+.searchArea tr .colorChip li .circle {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  outline: 0;
+  border-radius: 100%;
+  background-image: url(//img.echosting.cafe24.com/skin/base/product/bg_colorchip_circle_23.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/*컬러집합체*/
+.searchArea tr .colorChip li .c1 {
+  background-color: #fec0cb;
+}
+.searchArea tr .colorChip li .c2 {
+  background-color: #c20f0a;
+}
+.searchArea tr .colorChip li .c3 {
+  background-color: #d7b170;
+}
+.searchArea tr .colorChip li .c4 {
+  background-color: #feffef;
+}
+.searchArea tr .colorChip li .c5 {
+  background-color: #000;
+}
+.searchArea tr .colorChip li .c6 {
+  background-color: #000082;
+}
+.searchArea tr .colorChip li .c7 {
+  background-color: #8d068e;
+}
+.searchArea tr .colorChip li .c8 {
+  background-color: #a9a9a9;
+}
+.searchArea tr .colorChip li .c9 {
+  background-color: #501704;
+}
+.searchArea tr .colorChip li .c10 {
+  background-color: #0000fd;
+}
+.searchArea tr .colorChip li .c11 {
+  background-color: #007543;
+}
+.searchArea tr .colorChip li .c12 {
+  background-color: #ff5a00;
+}
+.searchArea tr .colorChip li .c13 {
+  background-color: #363636;
+}
+.searchArea tr .colorChip li .c14 {
+  background-color: #050560;
+}
+.searchArea tr .colorChip li .c15 {
+  background-color: #56754c;
+}
+.searchArea tr .colorChip li .c16 {
+  background-color: #263622;
+}
+.searchArea tr .colorChip li .c17 {
+  background-color: #d987db;
+}
+.searchArea tr .colorChip li .c18 {
+  background-color: #fdff6d;
+}
+.searchArea tr .colorChip li .c19 {
+  background-color: #fdeb00;
+}
+.searchArea tr .colorChip li .c20 {
+  background-color: #f09d01;
+}
+.searchArea tr .colorChip li .c21 {
+  background-color: #fff;
+}
+.searchArea tr .colorChip li .c22 {
+  background-color: #e75480;
+}
+.searchArea tr .colorChip li .c23 {
+  background-color: #474747;
+}
+.searchArea tr .colorChip li .c24 {
+  background-color: #ff00ff;
+}
+.searchArea tr .colorChip li .c25 {
+  background-color: #760016;
+}
+
+@media (max-width: 800px) {
+  .description .inner-description .colors .color {
+    margin-bottom: 0;
+  }
+  .description .inner-description .colors .color .chips {
+    width: 15px;
+    height: 15px;
+    background-position: 0 15px;
+    margin-right: 2px;
+  }
+  .description .inner-description .colors .color .chips:hover:after {
+    display: none;
+  }
+}
