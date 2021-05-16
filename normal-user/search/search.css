@@ -400,7 +400,6 @@ path {
   display: table-cell;
   vertical-align: middle;
   cursor: pointer;
-  background-color: var(--main-orange);
 }
 .prd-hover .ho-button .detail-btn:hover {
   background-color: var(--main-orange);
