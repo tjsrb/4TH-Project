@@ -1,33 +1,24 @@
+.container-box {
+  width: var(--pc-container);
+}
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .event-text {
-  margin-top: 15px;
   font-size: 1.5rem;
-}
-.over-event {
-  margin-left: 15px;
-}
-.event-img {
-  width: 100%;
-  height: 100%;
-
-  margin: 15px;
 }
 
 .ing-event {
   display: flex;
-  margin: 15px;
 }
 .img-box {
   width: 400px;
   height: 200px;
   border: 1px solid black;
-  margin: 15px;
 }
-.img-text {
+.img__text {
   width: 430px;
   text-align: center;
 }
