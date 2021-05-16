@@ -1,8 +1,9 @@
 (() => {
+  
   const supplyName = new CustomInput("supplyInfoGroup", "업체명");
   const supplyNumber = new CustomInput("supplyInfoGroup", "사업자등록번호");
 
-  const addressInputMetaData = new CustomInputMetaData("true","","text","");
+  const addressInputMetaData = new CustomInputMetaData("true","","text","aaa","aaa");
 
   const supplyAddress = new CustomInput("supplyInfoGroup", "주소", addressInputMetaData);
   const supplyDetailAddress = new CustomInput("supplyInfoGroup", "상세주소");
