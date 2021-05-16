@@ -1,4 +1,4 @@
-.container{
+.container {
   width: var(--pc-container);
 }
 .strong {
@@ -17,16 +17,12 @@
   width: 68%;
   height: 190px;
   border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 200px;
 }
 .contents-box {
   width: 500px;
   height: 100px;
-  padding: 15px;
-  background-color:gray;
+  background-color: gray;
   z-index: 0.5;
 }
 .margin-top {
@@ -47,7 +43,6 @@
   align-items: center;
   width: 200px;
   height: 800px;
-  padding-right: 15px;
   background-color: white;
   border: 2px solid black;
   flex-direction: column;
@@ -60,15 +55,10 @@
 }
 .second-box-contents {
   flex-direction: column;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 .body-contents {
   width: 100%;
   flex-direction: column;
-}
-.recently-order {
-  margin-left: 15px;
 }
 .left-box {
   display: none;
@@ -91,7 +81,6 @@ th {
 .table {
   text-align: center;
   width: 100%;
-  margin-right: 15px;
   border-top: 1px solid orange;
   border-bottom: 1px solid gray;
 }
@@ -107,19 +96,13 @@ th {
   margin: 30px;
   width: 100%;
 }
-img {
+.img {
   width: 100%;
   height: 100%;
 }
 .img-box {
-  margin-right: 15px;
   width: 300px;
   height: 300px;
-}
-#hidden {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .list {
   display: flex;
@@ -171,7 +154,6 @@ li {
   }
   .ul-list {
     width: 100%;
-    margin-top: 15px;
   }
   .ul-space {
     display: flex;
@@ -186,9 +168,6 @@ li {
   }
 
   .my-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     height: 300px;
   }
