@@ -30,7 +30,6 @@ var CustomInput = /** @class */ (function () {
             _this.initEventListener();
         };
         this.styling = function (cssStr) {
-            console.log('stylingstylingstyling')
             var styleElem = document.createElement('style');
             styleElem.appendChild(document.createTextNode(cssStr));
             document.getElementsByTagName('body')[0].appendChild(styleElem);
@@ -59,19 +58,28 @@ var CustomInput = /** @class */ (function () {
         };
         this.initEventListener = function () {
             _this.inputElem.addEventListener("focus", function () {
-                _this.labelElem.style.transform = 'translateY(-30px)';
+                _this.labelElem.style.transform = 'translateY(-20px)';
+                _this.labelElem.style.fontSize = '14px';
             });
             _this.inputElem.addEventListener("blur", function () {
                 if (_this.inputElem.value !== "") {
-                    _this.labelElem.style.transform = 'translateY(-30px)';
+                    _this.labelElem.style.transform = 'translateY(-20px)';
+                    _this.labelElem.style.fontSize = '14px';
                 }
                 else {
                     _this.labelElem.style.transform = 'translateY(0px)';
+                    _this.labelElem.style.fontSize = 'large';
                 }
             });
         };
         this.getValue = function () {
             return _this.inputElem.value;
+        };
+        this.getElement = function () {
+            return _this.inputElem;
+        };
+        this.getLabelElement = function () {
+            return _this.labelElem;
         };
         this.addEventListener = function (type, lisenter) {
             _this.inputElem.addEventListener(type, lisenter);
@@ -85,7 +93,7 @@ var CustomInput = /** @class */ (function () {
                 _this.eventList = newEventList;
             });
         };
-        this.defaultStyle = "\n  .custom-input-container-elem {\n      background-color: red;\n      position: relative;\n      display: flex;\n      margin-top:30px;\n      width:100%;\n    }\n    \n    .custom-input-container-elem label {\n      transition: 0.2s;\n      position: absolute;\n      top: 0;\n      left: 0;\n      font-size: large;\n    }\n    .custom-input-container-elem input {\n      width:100%;\n      font-size: x-large;\n      outline: none;\n      border-left: none;\n      border-right: none;\n      border-top: none;\n    }\n    \n    .custom-input-container-elem input:focus{\n      border-bottom: 2px solid orangered;\n    }\n  ";
+        this.defaultStyle = "\n  .custom-input-container-elem {\n      position: relative;\n      display: flex;\n      margin-top:50px;\n      width:100%;\n    }\n    \n    .custom-input-container-elem label {\n      transition: 0.2s;\n      position: absolute;\n      top: -8px;\n      left: 0;\n      font-size: large;\n    }\n    .custom-input-container-elem input {\n      width:100%;\n      font-size: large;\n      outline: none;\n      border-left: none;\n      border-right: none;\n      border-top: none;\n    }\n    \n    .custom-input-container-elem input:focus{\n      border-bottom: 2px solid orangered;\n    }\n  ";
         this.validationElementId(elementId);
         this.initialize(elementId, labelText, attributes);
     }
