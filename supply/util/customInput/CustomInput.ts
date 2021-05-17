@@ -41,7 +41,7 @@ class CustomInput {
   private styling = (cssStr:string):void => {
       let styleElem = document.createElement('style');
       styleElem.appendChild(document.createTextNode(cssStr));
-      document.getElementsByTagName('head')[0].appendChild(styleElem);
+      document.getElementsByTagName('body')[0].appendChild(styleElem);
       this.containerElem.classList.add('custom-input-container-elem');
   }
 
@@ -71,13 +71,18 @@ class CustomInput {
 
   private initEventListener = ():void => {
       this.inputElem.addEventListener("focus",()=>{
-          this.labelElem.style.transform = 'translateY(-30px)';
+          this.labelElem.style.transform = 'translateY(-20px)';
+          this.labelElem.style.fontSize = '14px';
       })
       this.inputElem.addEventListener("blur",()=>{
           if(this.inputElem.value !== ""){
-              this.labelElem.style.transform = 'translateY(-30px)';
+              this.labelElem.style.transform = 'translateY(-20px)';
+          this.labelElem.style.fontSize = '14px';
+
           }else {
               this.labelElem.style.transform = 'translateY(0px)';
+          this.labelElem.style.fontSize = 'large';
+
           }
       })
   }
@@ -85,6 +90,13 @@ class CustomInput {
   public getValue = ():string|number|Array<string> => {
       return this.inputElem.value;
   }
+  
+  public getElement = ():HTMLInputElement => {
+    return this.inputElem;
+}
+  public getLabelElement = ():HTMLElement => {
+    return this.labelElem;
+}
 
   public addEventListener = (type:string, lisenter:any):void =>{
       this.inputElem.addEventListener(type,lisenter);
@@ -103,23 +115,22 @@ class CustomInput {
 
   private defaultStyle:string = `
   .custom-input-container-elem {
-      background-color: red;
       position: relative;
       display: flex;
-      margin-top:30px;
+      margin-top:50px;
       width:100%;
     }
     
     .custom-input-container-elem label {
       transition: 0.2s;
       position: absolute;
-      top: 0;
+      top: -8px;
       left: 0;
       font-size: large;
     }
     .custom-input-container-elem input {
       width:100%;
-      font-size: x-large;
+      font-size: large;
       outline: none;
       border-left: none;
       border-right: none;
