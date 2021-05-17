@@ -80,7 +80,7 @@
 }
 .content1 {
   margin-top: 120px;
-  height: 750px;
+  height: 1100px;
   width: 100%;
 }
 .content1-inner {
@@ -114,6 +114,9 @@
 }
 .tab li:first-child a {
   color: #fff;
+}
+.product-list {
+  padding: 0;
 }
 .prdList {
   width: 100%;
@@ -233,7 +236,6 @@
   display: table-cell;
   vertical-align: middle;
   cursor: pointer;
-  background-color: var(--main-orange);
 }
 .prd-hover .ho-button .detail-btn:hover {
   background-color: var(--main-orange);
@@ -414,5 +416,96 @@
 .comm-footer {
   border: 1px solid black;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 1383px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-list {
+    padding-left: 255px;
+  }
+  .grid4 > li {
+    width: 38%;
+  }
+
+  .prdList > li:nth-child(3n + 1) {
+    clear: none;
+  }
+}
+@media (max-width: 940px) {
+  .product-list {
+    padding-left: 255px;
+  }
+  .detail-btn a,
+  .cart-btn {
+    font-size: 11px;
+  }
+
+  .prd-hover .ho-button .cart-btn img {
+    width: 15px;
+    height: 15px;
+  }
+  .prd-hover .ho-button .detail-btn img {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 852px) {
+  .content1 {
+    height: 2200px;
+  }
+  .product-list {
+    width: 1000px;
+    padding-left: 360px;
+  }
+  .product-list .prdList .thumbnail {
+    display: inline;
+  }
+  .prdList .description {
+    display: inline-block;
+    width: 100%;
+  }
+  .grid4 > li {
+    width: 300px;
+  }
+}
+@media (max-width: 645px) {
+  .grid4 > li {
+    width: 250px;
+  }
+  .product-list {
+    width: 1000px;
+    padding-left: 410px;
+  }
+  .tab ul {
+    max-width: 610px;
+  }
+}
+@media (max-width: 510px) {
+  .grid4 > li {
+    width: 200px;
+  }
+  .product-list {
+    width: 1000px;
+    padding-left: 460px;
+  }
+  .tab ul {
+    max-width: 490px;
+  }
+}
+@media (max-width: 414px) {
+  .content1 {
+    height: 1800px;
+  }
+  .grid4 > li {
+    width: 180px;
+  }
+  .product-list {
+    width: 1000px;
+    padding-left: 478px;
+  }
+  .tab ul {
+    max-width: 440px;
+  }
 }

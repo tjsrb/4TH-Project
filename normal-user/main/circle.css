@@ -128,7 +128,13 @@
   background-color: #760016;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1383px) {
+  .description .inner-description .colors .color .chips:hover:after {
+    left: 9.5%;
+    top: 65.7%;
+  }
+}
+@media (max-width: 852px) {
   .description .inner-description .colors .color {
     margin-bottom: 0;
   }
