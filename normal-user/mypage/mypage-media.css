@@ -2,8 +2,70 @@
     .contents {
         margin-right: 200px;
     }
+    .img-box{
+      width: 300px;
+      height: 300px;
+    }
+    .mobile-user-email{
+      display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+  .mobile-user-email{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+    .table{
+        display: none;
+    }
+    .strong1{
+        display: none;
+    }
+    .user-email{
+        display: none;
+    }
+    .container-box{
+        width: 100%;
+    }
+    .container-box2{
+        display: none;
+    }
+    .contents{
+        flex-direction: column;
+    }
+    .contetns-box{
+        order: 1;
+    }
+    .user-email-box{
+        order: 2;
+    }
+    .mobile-text{
+        border-bottom: 1px solid gray;
+    }
+    .Add__text{
+        color: rgb(189, 178, 178);
+        width: 100%;
+    }
+    .mobile-container{
+        text-align: center; 
+    }
+    .mobile-user-email{
+        display: block;
+        
+    }
+    .mobile-height{
+      height: 500px;
+    }
+    .mobile-container{
+      display: block;
+    }
+   
 }
 @media screen and (max-width: 1318px) {
+    .hidden-contents-box{
+        display: block;
+    }
     .recently-order {
       display: none;
     }
@@ -13,9 +75,7 @@
     .container{
         width:100%;
     }
-    .table {
-      display: none;
-    }
+   
     .first-box {
       width: 100%;
       flex-direction: column;
@@ -23,13 +83,7 @@
     .contents {
         margin-right: 0px;
     }
-    .hidden {
-      width: 60%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      display: block;
-    }
+    
     .hidden-contents1 {
       border-top: 1px solid gray;
     }
@@ -66,18 +120,12 @@
       border: none;
     }
     .second-box-contents {
-      border: none;
-      display: flex;
-      align-items: flex-start;
-      background-color: rgb(235, 127, 127);
-      margin: 0;
-      border: 1px solid black;
     }
     .recently-contents {
       width: 100%;
     }
     .img-box {
-      width: auto;
+      width: 250px;
       height: auto;
     }
   }
