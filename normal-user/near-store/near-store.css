@@ -1,10 +1,8 @@
 .flex {
   display: flex;
 }
-
 .store-name-flex {
   display: flex;
-  padding: 15px;
 }
 .center {
   display: flex;
@@ -24,14 +22,15 @@
 .body-container {
   width: var(--pc-container);
   display: flex;
-  justify-content: center;
   height: 800px;
 }
-.store-name-box {
+small .store-name-box {
   width: 100%;
 }
 .store-name {
   width: 240px;
+  border: 1px solid black;
+  height: 550px;
 }
 .store-name-text :nth-child(1) {
   font-size: 0.8rem;
@@ -43,11 +42,7 @@
 .store-name-text span {
   flex-direction: column;
 }
-.cloth-list-container {
-  height: 100%;
-}
 .img-box {
-  margin-right: 15px;
   width: 70px;
   height: 70px;
 }
@@ -58,6 +53,8 @@
 }
 .cloth-list {
   width: 300px;
+  border: 1px solid black;
+  height: 620px;
 }
 .img-combo-box {
   width: 80px;
@@ -65,6 +62,10 @@
 }
 .combo-box-contents {
   margin: 15px;
+}
+.page-list li {
+  float: left;
+  margin-right: 15px;
 }
 select {
   width: 200px;
@@ -82,8 +83,4 @@ select {
 }
 .media-store-name {
   display: none;
-}
-.page-list li {
-  float: left;
-  margin-right: 10px;
 }
